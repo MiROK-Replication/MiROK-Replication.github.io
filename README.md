@@ -1,14 +1,15 @@
 # Replication Package for MiROK
 
 Based on the implementation, we mine RAR pairs from the code corpus and design a series of experiments to evaluate the effectiveness of MiROK by answering the following research questions.
-**RQ1 (Capability of RAR Pair Mining):** How many RAR pairs can be mined by MiROK? How much of them are valid? What capabilities of RAR pair mining are reflected by the results?
-**RQ2 (Impact of Different Mining Modules):** What is the impact of the two mining modules on the mining of RAR pairs?
-**RQ3 (Effectiveness in API Method Pair Instantiation):** How many resource acquisition/release related API method pairs can be instantiated from the mined RAR pairs? How much of them are valid?
-**RQ4 (Effectiveness in Resource Leak Detection):** How many resource leaks can be detected based on the mined RAR pairs? How much of them are correct?
+- **RQ1 (Capability of RAR Pair Mining):** How many RAR pairs can be mined by MiROK? How much of them are valid? What capabilities of RAR pair mining are reflected by the results?
+- **RQ2 (Impact of Different Mining Modules):** What is the impact of the two mining modules on the mining of RAR pairs?
+- **RQ3 (Effectiveness in API Method Pair Instantiation):** How many resource acquisition/release related API method pairs can be instantiated from the mined RAR pairs? How much of them are valid?
+- **RQ4 (Effectiveness in Resource Leak Detection):** How many resource leaks can be detected based on the mined RAR pairs? How much of them are correct?
 
 
 ## RQ1: Capability of RAR Pair Mining
 Based on the 26 seed RAR pairs, MiROK mines 1,313 new RAR pairs from the code corpus, among which 1,171 (89.2%) are confirmed to be valid. 
+
 All the valid RAR pairs (include seeds) can be found in: [valid_rars](./final_rars.txt)
 
 ## RQ2: Impact of Different Mining Modules
@@ -16,8 +17,6 @@ MiROK combines rule-based RAR pair expansion and learning-based RAR pair identif
 - MiROK: the complete implementation of MiROK which combines both of the two modules.
 - MiROK-L: learning-based RAR pair identification is removed and only rule-based RAR pair expansion is included.
 - MiROK-R rule-based RAR pair expansion is removed and only learning-based RAR pair identification is included.
-
-
 The evaluation results show that both the rule-based RAR pair expansion and the learning-based RAR pair identification are important for MiROK.
 These two modules are complementary in their capabilities of RAR pair mining.
 More details can be found in our paper.
