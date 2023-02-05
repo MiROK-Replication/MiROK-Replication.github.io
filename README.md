@@ -16,14 +16,14 @@ We apply MiROK  to first mine Abs-RAR pairs from a large code corpus of 1,454,22
 ## RQ1: Effectiveness of Abs-RAR Pair Mining
 Based on the 26 seed Abs-RAR pairs, MiROK mines 1,313 new RAR pairs from the code corpus, among which 1,171 (89.2%) are confirmed to be valid. 
 
-All the valid Abs-RAR pairs (include seeds) can be found in: [valid_absrars](./final_absrars.txt)
+All the valid Abs-RAR pairs (include seeds) can be found in [the list of valid abs-rar pairs](./abs-rars.csv).
 
 ## RQ2: Effectiveness of RAR Pair Instantiation
 MiROK instantiate 10,766 instances (i.e., concrete RAR pairs) from the 1,197 valid Abs-RAR pairs in 2,261 libraries.
 To evaluate the quality of the instantiated concrete RAR pairs, we use a statistical sampling method to randomly sample 372 RAR pairs, which ensures the estimated precision is in 0.05 error margin at 95\% confidence level.
 Among the 372 sampled API method pairs,  93.3% (347) are confirmed to be valid.
 
-The annotation results can be found in: [sampled_rars](./sampled_rars.csv), and the complete RAR pairs can be found in: [final_rars](./final_rars.csv)
+The annotation results can be found in [human annotations (RQ2)](./rq2.csv), and the complete RAR pairs can be found in [the list of rar pairs](./rars.csv).
 
 
 ## RQ3.a: Resource Leaks in Online Code Examples
@@ -32,7 +32,7 @@ The detector reports 761 resource leak defects in the 46,389 online code example
 To evaluate the validity of the results, we randomly select 256 cases from the detected resource leaks and manually check these cases.
 Among the 256 sampled resource leak defects, 73.4% (188) are confirmed to be true.
 
-The annotation results can be found in : [final_RQ4](./final_RQ4.zip)
+The annotation results can be found in [human annotations (RQ3.a)](./rq3a.zip).
 
 
 ## RQ4.b: Resource Leaks in Open-source Projects
