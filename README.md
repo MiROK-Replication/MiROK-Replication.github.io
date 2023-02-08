@@ -12,6 +12,24 @@ We apply MiROK  to first mine Abs-RAR pairs from a large code corpus of 1,454,22
     
 - **RQ4. (Impact of Each Mining Strategy)**: What is the contribution of the each mining strategy in MiROK?    
 
+## Seed Abs-RAR Pairs
+
+|       |       |
+| :---: | :---: |
+| ⟨adapter, enable/disable⟩ | ⟨audio, start/stop⟩ |
+| ⟨camera, start/stop⟩ | ⟨chronometer, start/stop⟩ |
+| ⟨codec, start/stop⟩ | ⟨connection, connect/disconnect⟩ |
+| ⟨descriptor, acquire/release⟩ | ⟨database, open/close⟩ |
+| ⟨device, open/close⟩ | ⟨file, &lt;init&gt;/close⟩ |
+| ⟨file, open/close⟩ | ⟨holder, lock/unlock⟩ |
+| ⟨lock, acquire/release⟩ | ⟨lock, lock/unlock⟩ |
+| ⟨manager, load/unload⟩ | ⟨manager, open/close⟩ |
+| ⟨manager, register/unregister⟩ | ⟨media, &lt;init&gt;/release⟩ |
+| ⟨media, start/stop⟩ | ⟨player, &lt;init&gt;/release⟩ |
+| ⟨player, create/release⟩ | ⟨player, start/stop⟩ |
+| ⟨service, register/unregister⟩ | ⟨surface, &lt;init&gt;/release⟩ |
+| ⟨surface, lock/unlock⟩ | ⟨usb, open/close⟩ |
+
 
 ## RQ1: Effectiveness of Abs-RAR Pair Mining
 Based on the 26 seed Abs-RAR pairs, MiROK mines 1,313 new RAR pairs from the code corpus, among which 1,171 (89.2%) are confirmed to be valid. 
