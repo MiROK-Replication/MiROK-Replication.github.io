@@ -54,7 +54,7 @@ The annotation results can be found in [human annotations (RQ3.a)](./rq3a.zip).
 
 
 ## RQ4.b: Resource Leaks in Open-source Projects
-We integrate the 10,766 instantiated RAR pairs to FindBugs to detect resource leaks in 10 open-source projects, which are shown in the following table.
+We integrate the 6,314 instantiated RAR pairs to FindBugs to detect resource leaks in 10 open-source projects, which are shown in the following table.
 
 | Repo                                                              | Star |
 | ---                                                               | ---  |
